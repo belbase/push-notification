@@ -10,6 +10,8 @@ use App\PushNotification\Exception\PushNotificationFailedException;
 class FirebaseCloudMessaging implements PushNotificationInterface
 {
 	protected $url;
+
+	protected $header_data;
 	
 	protected $registration_id;
 	
@@ -28,21 +30,27 @@ class FirebaseCloudMessaging implements PushNotificationInterface
 		$this->api_key = config('pushnotification.firebase.api_key');
 		$this->header=[
 			'Content-Type: application/json',
-		    'Authorization: key='.config('pushnotification.firebase.api_key'),
+		    'Authorization: key='.config('pushnotification.firebase.server_key'),
 		];
 	}
 
-	public function setMessage($title,$body){
+	public function setMessage($title,$body,$data){
 		$this->content=[
 			'body' 	=> $body,
 			'title'	=> $title,
             'icon'	=> 'myicon',/*Default Icon*/
             'sound' => 'mySound'/*Default sound*/
           ];
+        $this->data($data);
+        return $this;
 	}
-	
+	private function data($data){
+		$this->header_data = $data;
+
+	}
 	public function to($to){
 		$this->registration_id = $to;
+		return $this;
 	}
 
 	public function setValidator(){
@@ -59,6 +67,7 @@ class FirebaseCloudMessaging implements PushNotificationInterface
 	    $this->checkData($this->validator);
 	    $data = json_encode([
             'to' => $this->registration_id,
+            'data'=> $this->header_data,
 	    	'notification'  => $this->content,
 	    ]);
 		// print("\nJSON sent:\n");
@@ -99,11 +108,15 @@ class FirebaseCloudMessaging implements PushNotificationInterface
 
 	    $response = curl_exec($ch);
 	    curl_close($ch);
-		// if($response!=200){
+		if($response && $this->isJson($response) && json_decode($response)->success == 1){
 		    return $response;
-		// }
-		// throw new PushNotificationFailedException;
+		}
+		throw new PushNotificationFailedException;
 	}
+	private function isJson($string) {
+   		 json_decode($string);
+    	return (json_last_error() == JSON_ERROR_NONE);
+  	}
 }
 
 ?>
