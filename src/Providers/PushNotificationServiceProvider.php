@@ -25,7 +25,7 @@ class PushNotificationServiceProvider extends ServiceProvider {
 
     public function boot(){
         $this->publishes([
-            __DIR__.'/config/config.php' => base_path('config/pushnotification.php'),
+            __DIR__.'/../config/config.php' => base_path('config/pushnotification.php'),
         ]);
     }
 	/**
