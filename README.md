@@ -1,4 +1,4 @@
-# IndiPay
+# PushNotification
 The Laravel 5 Package for Push Notification. Currently supported Services: <a href="https://firebase.google.com/">Firebase Cloud Messaging</a>
 
 <h2>Installation</h2>
