@@ -1,5 +1,5 @@
 <?php 
-namespace Belbase\Providers;
+namespace Belbase\PushNotification\Providers;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
