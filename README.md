@@ -1,4 +1,4 @@
-# IndiPay
+# PushNotification
 The Laravel 5 Package for Push Notification. Currently supported Services: <a href="https://firebase.google.com/">Firebase Cloud Messaging</a>
 
 <h2>Installation</h2>
@@ -17,16 +17,16 @@ The Laravel 5 Package for Push Notification. Currently supported Services: <a hr
     'PushNotification' => Belbase\PushNotification\Facades\PushNotification::class,
 </pre></code>
 
-<b>Step 4:</b> Publish the config & Middleware by running in your terminal
+<b>Step 4:</b> Publish the config by running in your terminal
 <pre><code>
     php artisan vendor:publish
 </pre></code>
 
 <h2>Usage</h2>
 
-Edit the config/indipay.php. Set the appropriate Gateway and its parameters. Then in your code... <br>
+Edit the config/pushnotification.php. Set the appropriate Service and its parameters. Then in your code... <br>
 <pre><code> use Belbase\PushNotification\Facades\PushNotification;  </code></pre>
-Initiate Purchase Request and Redirect using the default service:-
+Initiate Request and Redirect using the default service:-
 ```php 
       /* All Required Parameters by your Gateway */
       
@@ -35,3 +35,7 @@ Initiate Purchase Request and Redirect using the default service:-
       ];
       return PushNotification::to('_tokenID')->setMessage('title','body',$metaData)->sendMessage();
 ```
+
+## License
+
+The PushNotification is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

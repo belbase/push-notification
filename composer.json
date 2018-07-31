@@ -2,10 +2,12 @@
     "name": "belbase/push-notification",
     "description": "This is the The Library of Push Notification for Firebase.",
     "type": "library",
+    "version": "0.1-alpha",
     "license": "MIT",
     "keywords": [
         "Firebase"
     ],
+    "minimum-stability": "alpha",
     "authors": [
         {
             "name": "Deepak Belbase",
