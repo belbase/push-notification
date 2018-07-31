@@ -18,8 +18,7 @@ return [
     | Firebase
     |--------------------------------------------------------------------------
     |
-    | This value determines the "api_key" your application is currently
-    | using for pushnotification.
+    | This value determines the firebase service for pushnotification.
     |
     */
     'firebase' =>   [
@@ -38,21 +37,21 @@ return [
         | Server Key
         |--------------------------------------------------------------------------
         |
-        | This value determines the "api_key" your application is currently
+        | This value determines the "server_key" your application is currently
         | using for pushnotification.
         |
         */
-            'server_key' => 'AAAAYYQ-TFY:APA91bH2ZaNE0lY_rhgBleERh_zGYuRDLs8ztQuLt2Q1wxzKpIoijNQxcMpKi0YGXwC5Xt6haTDav-xSCyEdEBNjmTnVlSvlxKGCGiPAMybmyMyNS5S6Ahdd-AdgQJxObO9GTUOWfQgyftEKYJjjnKoNLs_YKoUAJA',
+            'server_key' => 'YOUR-SERVER-KEY-HERE',
         /*
         |--------------------------------------------------------------------------
         | sender ID
         |--------------------------------------------------------------------------
         |
-        | This value determines the "api_key" your application is currently
+        | This value determines the "sender_id" your application is currently
         | using for pushnotification.
         |
         */
-            'sender_id' => '418830502998',
+            'sender_id' => 'YOUR-SENDER-ID-HERE',
         /*
         |--------------------------------------------------------------------------
         | API Key
@@ -62,7 +61,7 @@ return [
         | using for pushnotification.
         |
         */
-            'api_key' => 'AIzaSyBq7WGNmc63guVM-lwqKF5Ad5nPKfpcL_g',
+            'api_key' => 'YOUR-API-KEY-HERE',
     ],
     
 
