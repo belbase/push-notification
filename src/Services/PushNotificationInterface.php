@@ -1,5 +1,5 @@
 <?php
-namespace App\PushNotification\Providers;
+namespace Belbase\PushNotification\Providers;
 
 interface PushNotificationInterface{
 

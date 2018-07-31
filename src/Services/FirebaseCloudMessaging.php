@@ -1,11 +1,11 @@
 <?php
-namespace App\PushNotification\Providers;
+namespace Belbase\PushNotification\Providers;
 /**
  * 
  */
 use Illuminate\Support\Facades\Validator;
-use App\PushNotification\Exception\PushNotificationParameterMissingException;
-use App\PushNotification\Exception\PushNotificationFailedException;
+use Belbase\PushNotification\Exception\PushNotificationParameterMissingException;
+use Belbase\PushNotification\Exception\PushNotificationFailedException;
 
 class FirebaseCloudMessaging implements PushNotificationInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\PushNotification\Exception;
+namespace Belbase\PushNotification\Exception;
 
 use \Exception; 
 class PushNotificationParameterMissingException extends Exception{

@@ -1,8 +1,8 @@
 <?php
-namespace App\PushNotification;
+namespace Belbase\PushNotification;
 
-use App\PushNotification\Providers\FirebaseCloudMessaging;
-use App\PushNotification\Providers\PushNotificationInterface;
+use Belbase\PushNotification\Providers\FirebaseCloudMessaging;
+use Belbase\PushNotification\Providers\PushNotificationInterface;
 /**
  * 
  */

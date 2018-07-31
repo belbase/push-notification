@@ -1,5 +1,5 @@
 <?php 
-namespace App\Providers;
+namespace Belbase\Providers;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
@@ -19,9 +19,8 @@ class PushNotificationServiceProvider extends ServiceProvider {
 	public function register()
 	{
         $service = Config::get('pushnotification.service');
-        $this->app->bind('PushNotification', 'App\PushNotification\PushNotification');
-        $this->app->bind('App\PushNotification\Providers\PushNotificationInterface','App\PushNotification\Providers\\'.$service.'CloudMessaging');
-        // dd($service);
+        $this->app->bind('PushNotification', 'Belbase\PushNotification\PushNotification');
+        $this->app->bind('Belbase\PushNotification\Providers\PushNotificationInterface','Belbase\PushNotification\Providers\\'.$service.'CloudMessaging');
 	}
 
     public function boot(){
