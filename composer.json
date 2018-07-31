@@ -12,7 +12,6 @@
             "email": "alpha3@madsstudio.co.in"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0"
     },
@@ -30,5 +29,8 @@
                 "PushNotification": "Belbase\\PushNotification\\Facades\\PushNotification"
             }
         }
+    },
+    "config": {
+        "preferred-install": "dist"
     }
 }
