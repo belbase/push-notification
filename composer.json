@@ -1,0 +1,14 @@
+{
+    "name": "belbase/push-notification",
+    "description": "This is the The Library of Push Notification for Firebase.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Deepak Belbase",
+            "email": "alpha3@madsstudio.co.in"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
