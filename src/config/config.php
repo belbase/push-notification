@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'service'	=>	env('PUSH_NOTIFICATION_SERVICE','Firebase'),
+    'service'	=>	env('PUSH_NOTIFICATION_SERVICE','firebase'),
 
     /*
     |--------------------------------------------------------------------------
