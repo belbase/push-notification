@@ -28,12 +28,12 @@ Edit the config/pushnotification.php. Set the appropriate Service and its parame
 <pre><code> use Belbase\PushNotification\Facades\PushNotification;  </code></pre>
 Initiate Request and Redirect using the default service:-
 ```php 
-      /* All Required Parameters by your Gateway */
-      
+      /* All Required Parameters by your Service */
+      $deviceAccessToken = 'DEVICE-ACCESS-TOKEN-HERE';
       $metaData=[
         // enter data to send along with notification
       ];
-      return PushNotification::to('_tokenID')->setMessage('title','body',$metaData)->sendMessage();
+      return PushNotification::to($deviceAccessToken)->setMessage('title','body',$metaData)->sendMessage();
 ```
 
 ## License
