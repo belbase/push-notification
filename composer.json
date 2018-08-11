@@ -7,7 +7,7 @@
     "keywords": [
         "Firebase"
     ],
-    "minimum-stability": "dist",
+    "minimum-stability": "^dist",
     "authors": [
         {
             "name": "Deepak Belbase",
