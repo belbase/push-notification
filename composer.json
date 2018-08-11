@@ -6,7 +6,6 @@
     "keywords": [
         "Firebase"
     ],
-    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Deepak Belbase",
@@ -34,6 +33,7 @@
             "Tests\\": "tests/"
         }
     },
+    "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
@@ -43,8 +43,5 @@
                 "PushNotification": "Belbase\\PushNotification\\Facades\\PushNotification"
             }
         }
-    },
-    "config": {
-        "preferred-install": "dist"
     }
 }
