@@ -11,7 +11,7 @@ The Laravel 5 Package for Push Notification. Currently supported Services: <a hr
 
 <b>Step 2:</b> Add the service provider to the config/app.php file in Laravel (Optional for Laravel 5.5)
 <pre><code>
-    Belbase\PushNotification\Providers\IndipayServiceProvider::class,
+    Belbase\PushNotification\Providers\PushNotificationServiceProvider::class,
 </pre></code>
 
 <b>Step 3:</b> Add an alias for the Facade to the config/app.php file in Laravel (Optional for Laravel 5.5)
@@ -27,7 +27,7 @@ The Laravel 5 Package for Push Notification. Currently supported Services: <a hr
 <h2>Usage</h2>
 
 Edit the config/pushnotification.php. Set the appropriate Service and its parameters. Then in your code... <br>
-<pre><code> use Belbase\PushNotification\Facades\PushNotification;  </code></pre>
+<pre><code> use PushNotification;  </code></pre>
 Initiate Request and Redirect using the default service:-
 ```php 
       /* All Required Parameters by your Service */
