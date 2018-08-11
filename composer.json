@@ -2,16 +2,18 @@
     "name": "belbase/push-notification",
     "description": "This is the The Library of Push Notification for Firebase.",
     "type": "library",
-    "version": "0.1-alpha",
     "license": "MIT",
     "keywords": [
         "Firebase"
     ],
-    "minimum-stability": "alpha",
     "authors": [
         {
             "name": "Deepak Belbase",
             "email": "alpha3@madsstudio.co.in"
+        },
+        {
+            "name": "Deepak Gupta",
+            "email": "deepak.srmscet@gmail.com"
         }
     ],
     "require": {
@@ -31,6 +33,7 @@
             "Tests\\": "tests/"
         }
     },
+    "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
@@ -40,8 +43,5 @@
                 "PushNotification": "Belbase\\PushNotification\\Facades\\PushNotification"
             }
         }
-    },
-    "config": {
-        "preferred-install": "dist"
     }
 }
