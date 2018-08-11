@@ -108,8 +108,10 @@ class FirebaseCloudMessaging implements PushNotificationInterface
 
 	    $response = curl_exec($ch);
 	    curl_close($ch);
-		if($response && $this->isJson($response) && json_decode($response)->success == 1){
-		    return $response;
+		if($response && $this->isJson($response)){
+			$response = json_decode($response);
+			if($response->success == 1)return $response;
+			else throw new PushNotificationFailedException($response->results);
 		}
 		throw new PushNotificationFailedException;
 	}

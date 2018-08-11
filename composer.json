@@ -10,17 +10,30 @@
         {
             "name": "Deepak Belbase",
             "email": "alpha3@madsstudio.co.in"
+        },
+        {
+            "name": "Deepak Gupta",
+            "email": "deepak.srmscet@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "illuminate/support":"^5.2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.0"
     },
     "autoload": {
         "psr-4": {
             "Belbase\\PushNotification\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
