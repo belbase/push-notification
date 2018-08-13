@@ -27,7 +27,8 @@ The Laravel 5 Package for Push Notification. Currently supported Services: <a hr
 ## Usage
 
 Edit the config/pushnotification.php. Set the appropriate Service and its parameters. Then in your code... <br>
-``` use PushNotification;  ```
+``` use PushNotification;  ``` <br>
+
 Initiate Request and Redirect using the default service:-
 ```php 
       /* All Required Parameters by your Service */
@@ -37,6 +38,10 @@ Initiate Request and Redirect using the default service:-
       ];
       return PushNotification::to($deviceAccessToken)->setMessage('title','body',$metaData)->sendMessage();
 ```
+
+## Contributors
+1. Deepak Belbase
+2. Deepak Gupta
 
 ## License
 
