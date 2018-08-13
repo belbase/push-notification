@@ -3,31 +3,31 @@
 <br/>
 The Laravel 5 Package for Push Notification. Currently supported Services: <a href="https://firebase.google.com/">Firebase Cloud Messaging</a>
 
-<h2>Installation</h2>
-<b>Step 1:</b> Install package using composer
-<pre><code>
+## Installation
+** Step 1: ** Install package using composer
+```
     composer require belbase/push-notification
-</pre></code>
+```
 
-<b>Step 2:</b> Add the service provider to the config/app.php file in Laravel (Optional for Laravel 5.5)
-<pre><code>
+*** Step 2: *** Add the service provider to the config/app.php file in Laravel (Optional for Laravel 5.5)
+```php
     Belbase\PushNotification\Providers\PushNotificationServiceProvider::class,
-</pre></code>
+```
 
-<b>Step 3:</b> Add an alias for the Facade to the config/app.php file in Laravel (Optional for Laravel 5.5)
-<pre><code>
+*** Step 3: *** Add an alias for the Facade to the config/app.php file in Laravel (Optional for Laravel 5.5)
+```php 
     'PushNotification' => Belbase\PushNotification\Facades\PushNotification::class,
-</pre></code>
+```
 
-<b>Step 4:</b> Publish the config by running in your terminal
-<pre><code>
+*** Step 4: *** Publish the config by running in your terminal
+```
     php artisan vendor:publish
-</pre></code>
+```
 
-<h2>Usage</h2>
+## Usage
 
 Edit the config/pushnotification.php. Set the appropriate Service and its parameters. Then in your code... <br>
-<pre><code> use PushNotification;  </code></pre>
+``` use PushNotification;  ```
 Initiate Request and Redirect using the default service:-
 ```php 
       /* All Required Parameters by your Service */
@@ -41,3 +41,4 @@ Initiate Request and Redirect using the default service:-
 ## License
 
 The PushNotification is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+ 
