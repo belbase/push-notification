@@ -1,5 +1,5 @@
 # PushNotification
-[![Build Status](https://travis-ci.org/belbase/push-notification.svg?branch=0.1)](https://travis-ci.org/belbase/push-notification)
+[![Build Status](https://travis-ci.org/belbase/push-notification.svg?branch=1.0)](https://travis-ci.org/belbase/push-notification)
 <br/>
 The Laravel 5 Package for Push Notification. Currently supported Services: [Firebase Cloud Messaging](https://firebase.google.com/)
 
