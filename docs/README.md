@@ -4,22 +4,22 @@
 The Laravel 5 Package for Push Notification. Currently supported Services: <a href="https://firebase.google.com/">Firebase Cloud Messaging</a>
 
 ## Installation
-** Step 1: ** Install package using composer
+**Step 1:** Install package using composer
 ```
     composer require belbase/push-notification
 ```
 
-*** Step 2: *** Add the service provider to the config/app.php file in Laravel (Optional for Laravel 5.5)
+**Step 2:** Add the service provider to the config/app.php file in Laravel (Optional for Laravel 5.5)
 ```php
     Belbase\PushNotification\Providers\PushNotificationServiceProvider::class,
 ```
 
-*** Step 3: *** Add an alias for the Facade to the config/app.php file in Laravel (Optional for Laravel 5.5)
+**Step 3:** Add an alias for the Facade to the config/app.php file in Laravel (Optional for Laravel 5.5)
 ```php 
     'PushNotification' => Belbase\PushNotification\Facades\PushNotification::class,
 ```
 
-*** Step 4: *** Publish the config by running in your terminal
+**Step 4:** Publish the config by running in your terminal
 ```
     php artisan vendor:publish
 ```
